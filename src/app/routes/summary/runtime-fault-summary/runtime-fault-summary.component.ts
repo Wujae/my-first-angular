@@ -34,7 +34,8 @@ export class RuntimeFaultSummaryComponent implements OnInit, OnChanges {
     'background-size': '100%',
     height: '25px', width: '25px',
     display: 'block', float: 'left',
-    'margin-right': '5px'
+    'margin-right': '5px',
+    labelTextStyle: {'font-size': '20px', color: '#12dce6'}
   };
 
   constructor(private dataService: RuntimeFaultDataService) {
@@ -94,7 +95,7 @@ export class RuntimeFaultSummaryComponent implements OnInit, OnChanges {
       grid: {
         left: '4%',
         right: '4%',
-        bottom: '25%',
+        bottom: '30%',
         containLabel: true
       },
       xAxis : [

@@ -5,7 +5,7 @@
   },
   "remotePortletProperties": {
     "useRelativeUrl": true,
-    "serverIp": "172.22.172.180",
+    "serverIp": "10.217.247.159",
     "serverPort": "8080",
     "pluginPortletName":"jetsphmportlet",
     "portletLayoutId": "21990"

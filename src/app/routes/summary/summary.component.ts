@@ -20,6 +20,7 @@ const COLOR_PALETTE = ['#28d3d3', '#f1f57c'];
 })
 export class SummaryComponent implements OnInit {
 
+  flag: boolean = false;
   frames = FRAMES;
   repairSuggestionRTConfig: SimpleRollingTableConfig;
   healthEvaluationRTConfig: SimpleRollingTableConfig;
@@ -65,6 +66,7 @@ export class SummaryComponent implements OnInit {
 
     this.warnForecastInfoDS.currentSubject().subscribe( next=>{
       this.warnForecastData = next;
+      this.flag = true;
     }, error1 => {
       console.log("error", error1);
     });
@@ -139,7 +141,12 @@ export class SummaryComponent implements OnInit {
             titleStyle: { width: '15%', 'font-size': '16px', color: '#41b4f7' }
           },
           {
-            title: '处理建议', key: 'adviceContent',
+            title: '车辆号', key: 'areaName',
+            style: {width: '15%', 'font-size': '16px'},
+            titleStyle: { width: '15%', 'font-size': '16px', color: '#41b4f7' }
+          },
+          {
+            title: '故障描述', key: 'problemDescribe',
             style: {width: '40%', 'font-size': '16px'},
             titleStyle: { width: '40%', 'font-size': '16px', color: '#41b4f7' }
           },

@@ -20,7 +20,7 @@ const COLOR_PALETTE = ['#28d3d3', '#f1f57c'];
 })
 export class SummaryComponent implements OnInit {
 
-  flag: boolean = false;
+   flag: boolean = false;
   frames = FRAMES;
   repairSuggestionRTConfig: SimpleRollingTableConfig;
   healthEvaluationRTConfig: SimpleRollingTableConfig;
